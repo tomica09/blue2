@@ -1,0 +1,137 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "name": "internal",
+    "src": ".svelte-kit/generated/server/internal.js",
+    "isEntry": true,
+    "imports": [
+      "_internal.js"
+    ]
+  },
+  "_exports.js": {
+    "file": "chunks/exports.js",
+    "name": "exports"
+  },
+  "_hooks.server.js": {
+    "file": "chunks/hooks.server.js",
+    "name": "hooks.server",
+    "isDynamicEntry": true
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "name": "internal",
+    "imports": [
+      "_hooks.server.js"
+    ],
+    "dynamicImports": [
+      "_hooks.server.js"
+    ]
+  },
+  "_prod-ssr.js": {
+    "file": "chunks/prod-ssr.js",
+    "name": "prod-ssr"
+  },
+  "_tiles.js": {
+    "file": "chunks/tiles.js",
+    "name": "tiles",
+    "imports": [
+      "_hooks.server.js"
+    ],
+    "css": [
+      "_app/immutable/assets/tiles.CjKkceRx.css"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte": {
+    "file": "entries/fallbacks/layout.svelte.js",
+    "name": "entries/fallbacks/layout.svelte",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_hooks.server.js"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "name": "index",
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js",
+    "isEntry": true,
+    "imports": [
+      "_prod-ssr.js",
+      "_internal.js",
+      "_exports.js",
+      "_hooks.server.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "entries/pages/_error.svelte.js",
+    "name": "entries/pages/_error.svelte",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_hooks.server.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "name": "entries/pages/_page.svelte",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_hooks.server.js",
+      "_tiles.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BsChUDA3.css"
+    ]
+  },
+  "src/routes/about/+page.js": {
+    "file": "entries/pages/about/_page.js",
+    "name": "entries/pages/about/_page",
+    "src": "src/routes/about/+page.js",
+    "isEntry": true,
+    "imports": [
+      "_prod-ssr.js"
+    ]
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "entries/pages/about/_page.svelte.js",
+    "name": "entries/pages/about/_page.svelte",
+    "src": "src/routes/about/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_hooks.server.js"
+    ]
+  },
+  "src/routes/play/+page.svelte": {
+    "file": "entries/pages/play/_page.svelte.js",
+    "name": "entries/pages/play/_page.svelte",
+    "src": "src/routes/play/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_hooks.server.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.BfIMEMGy.css"
+    ]
+  },
+  "src/routes/play/[playerId]/+page.js": {
+    "file": "entries/pages/play/_playerId_/_page.js",
+    "name": "entries/pages/play/_playerId_/_page",
+    "src": "src/routes/play/[playerId]/+page.js",
+    "isEntry": true
+  },
+  "src/routes/play/[playerId]/+page.svelte": {
+    "file": "entries/pages/play/_playerId_/_page.svelte.js",
+    "name": "entries/pages/play/_playerId_/_page.svelte",
+    "src": "src/routes/play/[playerId]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_hooks.server.js",
+      "_tiles.js",
+      "_exports.js"
+    ],
+    "css": [
+      "_app/immutable/assets/_page.CJN5ELGd.css"
+    ]
+  }
+}
