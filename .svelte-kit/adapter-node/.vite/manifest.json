@@ -12,30 +12,29 @@
     "file": "chunks/exports.js",
     "name": "exports"
   },
-  "_hooks.server.js": {
-    "file": "chunks/hooks.server.js",
-    "name": "hooks.server",
-    "isDynamicEntry": true
-  },
   "_internal.js": {
     "file": "chunks/internal.js",
     "name": "internal",
     "imports": [
-      "_hooks.server.js"
+      "_ssr.js"
     ],
     "dynamicImports": [
-      "_hooks.server.js"
+      "src/hooks.server.js"
     ]
   },
   "_prod-ssr.js": {
     "file": "chunks/prod-ssr.js",
     "name": "prod-ssr"
   },
+  "_ssr.js": {
+    "file": "chunks/ssr.js",
+    "name": "ssr"
+  },
   "_tiles.js": {
     "file": "chunks/tiles.js",
     "name": "tiles",
     "imports": [
-      "_hooks.server.js"
+      "_ssr.js"
     ],
     "css": [
       "_app/immutable/assets/tiles.CjKkceRx.css"
@@ -47,7 +46,7 @@
     "src": "node_modules/@sveltejs/kit/src/runtime/components/layout.svelte",
     "isEntry": true,
     "imports": [
-      "_hooks.server.js"
+      "_ssr.js"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
@@ -59,8 +58,14 @@
       "_prod-ssr.js",
       "_internal.js",
       "_exports.js",
-      "_hooks.server.js"
+      "_ssr.js"
     ]
+  },
+  "src/hooks.server.js": {
+    "file": "chunks/hooks.server.js",
+    "name": "hooks.server",
+    "src": "src/hooks.server.js",
+    "isDynamicEntry": true
   },
   "src/routes/+error.svelte": {
     "file": "entries/pages/_error.svelte.js",
@@ -68,7 +73,7 @@
     "src": "src/routes/+error.svelte",
     "isEntry": true,
     "imports": [
-      "_hooks.server.js"
+      "_ssr.js"
     ]
   },
   "src/routes/+page.svelte": {
@@ -77,7 +82,7 @@
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_hooks.server.js",
+      "_ssr.js",
       "_tiles.js"
     ],
     "css": [
@@ -99,7 +104,7 @@
     "src": "src/routes/about/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_hooks.server.js"
+      "_ssr.js"
     ]
   },
   "src/routes/play/+page.svelte": {
@@ -108,7 +113,7 @@
     "src": "src/routes/play/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_hooks.server.js"
+      "_ssr.js"
     ],
     "css": [
       "_app/immutable/assets/_page.BfIMEMGy.css"
@@ -126,7 +131,7 @@
     "src": "src/routes/play/[playerId]/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_hooks.server.js",
+      "_ssr.js",
       "_tiles.js",
       "_exports.js"
     ],

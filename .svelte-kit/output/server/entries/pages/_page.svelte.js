@@ -1,4 +1,4 @@
-import { c as create_ssr_component, v as validate_component } from "../../chunks/hooks.server.js";
+import { c as create_ssr_component, v as validate_component } from "../../chunks/ssr.js";
 import { t as tiles, G as GameBoard } from "../../chunks/tiles.js";
 const css = {
   code: "main.svelte-1v6sauq{display:flex;flex-direction:row;align-items:center;gap:20px}button.svelte-1v6sauq{width:3cm;height:1cm}",

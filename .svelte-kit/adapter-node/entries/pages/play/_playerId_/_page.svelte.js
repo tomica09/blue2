@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, g as getContext, b as subscribe, v as validate_component } from "../../../../chunks/hooks.server.js";
+import { c as create_ssr_component, e as escape, g as getContext, b as subscribe, v as validate_component } from "../../../../chunks/ssr.js";
 import { t as tiles, G as GameBoard } from "../../../../chunks/tiles.js";
 import "../../../../chunks/exports.js";
 import "devalue";

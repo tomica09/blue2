@@ -1,4 +1,4 @@
-import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component, n as noop, d as safe_not_equal } from './chunks/hooks.server-CTZ5RUtR.js';
+import { c as create_ssr_component, s as setContext, v as validate_component, m as missing_component, n as noop, a as safe_not_equal } from './chunks/ssr-KgfjOieO.js';
 import { d as decode_pathname, h as has_data_suffix, s as strip_data_suffix, a as decode_params, n as normalize_path, b as disable_search, c as add_data_suffix, m as make_trackable, r as resolve } from './chunks/exports-BGi7-Rnc.js';
 
 const DEV = false;
@@ -176,11 +176,11 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "g613tf"
+  version_hash: "1h05vas"
 };
 async function get_hooks() {
   return {
-    ...await import('./chunks/hooks.server-CTZ5RUtR.js').then((n) => n.h)
+    ...await import('./chunks/hooks.server-C0aWoDpG.js')
   };
 }
 

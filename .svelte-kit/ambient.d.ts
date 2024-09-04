@@ -38,7 +38,7 @@ declare module '$env/static/private' {
 	export const configsetroot: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_1420: string;
+	export const EFC_4256: string;
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
@@ -70,11 +70,14 @@ declare module '$env/static/private' {
 	export const npm_lifecycle_event: string;
 	export const npm_lifecycle_script: string;
 	export const npm_node_execpath: string;
+	export const npm_package_engines_node: string;
 	export const npm_package_json: string;
 	export const npm_package_name: string;
 	export const npm_package_version: string;
 	export const NPM_PREFIX_JS: string;
 	export const NPM_PREFIX_NPM_CLI_JS: string;
+	export const NPM_PREFIX_NPX_CLI_JS: string;
+	export const NPX_CLI_JS: string;
 	export const NUMBER_OF_PROCESSORS: string;
 	export const OneDrive: string;
 	export const OneDriveConsumer: string;
@@ -154,7 +157,7 @@ declare module '$env/dynamic/private' {
 		configsetroot: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_1420: string;
+		EFC_4256: string;
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
@@ -186,11 +189,14 @@ declare module '$env/dynamic/private' {
 		npm_lifecycle_event: string;
 		npm_lifecycle_script: string;
 		npm_node_execpath: string;
+		npm_package_engines_node: string;
 		npm_package_json: string;
 		npm_package_name: string;
 		npm_package_version: string;
 		NPM_PREFIX_JS: string;
 		NPM_PREFIX_NPM_CLI_JS: string;
+		NPM_PREFIX_NPX_CLI_JS: string;
+		NPX_CLI_JS: string;
 		NUMBER_OF_PROCESSORS: string;
 		OneDrive: string;
 		OneDriveConsumer: string;
