@@ -39,7 +39,7 @@
   export let noHavemoney = "";
   export let socket;
   onMount(() => {
-    socket = new WebSocket("ws://localhost:8080");
+    socket = new WebSocket("ws://localhost:10000");
   });
   let send = 0;
   let sendmoney = {

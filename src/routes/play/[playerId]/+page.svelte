@@ -56,7 +56,7 @@
   let fourptfive = 5;
   let fourptone = 5;
   onMount(() => {
-    socket = new WebSocket("ws://localhost:8080");
+    socket = new WebSocket("ws://localhost:10000");
 
     socket.addEventListener("open", () => {
       socket.send(

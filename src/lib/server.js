@@ -1,6 +1,6 @@
 import { WebSocketServer } from "ws";
 
-const wss = new WebSocketServer({ port: 8080 });
+const wss = new WebSocketServer({ port: 10000 });
 let players = {};
 
 wss.on("connection", (ws) => {
@@ -215,4 +215,4 @@ wss.on("connection", (ws) => {
   });
 });
 
-console.log("WebSocket server is running on ws://localhost:8080");
+console.log("WebSocket server is running on ws://localhost:10000");
