@@ -4,6 +4,8 @@
   import { page } from "$app/stores";
   import GameController from "../../../lib/GameController.svelte";
   import { tiles } from "./tiles.js";
+  //const link = "ws://localhost:10000";
+  const link = "ws://blue-marble.onrender.com";
   let turn = 0;
   let dice1 = 0;
   let dice2 = 0;
@@ -56,7 +58,7 @@
   let fourptfive = 5;
   let fourptone = 5;
   onMount(() => {
-    socket = new WebSocket("ws://localhost:10000");
+    socket = new WebSocket(link);
 
     socket.addEventListener("open", () => {
       socket.send(

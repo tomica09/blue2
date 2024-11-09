@@ -38,8 +38,10 @@
   export let fourptone;
   export let noHavemoney = "";
   export let socket;
+  //const link = "ws://localhost:10000";
+  const link = "ws://blue-marble.onrender.com";
   onMount(() => {
-    socket = new WebSocket("ws://localhost:10000");
+    socket = new WebSocket(link);
   });
   let send = 0;
   let sendmoney = {
