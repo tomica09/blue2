@@ -39,7 +39,7 @@
   export let noHavemoney = "";
   export let socket;
   //const link = "ws://localhost:10000";
-  const link = "ws://blue-marble.onrender.com";
+  const link = "wss://blue-marble.onrender.com";
   onMount(() => {
     socket = new WebSocket(link);
   });

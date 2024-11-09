@@ -4,7 +4,8 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "npx vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"start": "node src/lib/server.js"
 	},
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",

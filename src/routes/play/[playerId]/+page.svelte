@@ -5,7 +5,7 @@
   import GameController from "../../../lib/GameController.svelte";
   import { tiles } from "./tiles.js";
   //const link = "ws://localhost:10000";
-  const link = "ws://blue-marble.onrender.com";
+  const link = "wss://blue-marble.onrender.com";
   let turn = 0;
   let dice1 = 0;
   let dice2 = 0;
