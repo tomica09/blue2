@@ -215,4 +215,17 @@ wss.on("connection", (ws) => {
   });
 });
 
-console.log("WebSocket server is running on ws://localhost:10000");
+// HTTP 서버와 WebSocket 서버 통합
+const server = app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
+
+server.on("upgrade", (request, socket, head) => {
+  wss.handleUpgrade(request, socket, head, (ws) => {
+    wss.emit("connection", ws, request);
+  });
+});
+
+// SvelteKit 핸들러 통합 (항상 마지막에 배치)
+app.use(handler);
+
